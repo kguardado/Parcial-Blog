@@ -3,73 +3,172 @@
     margin: 0;
     padding: 0;
 }
-.logo { 
-    width: 1515px;
-    height: 220px;
-    background-color: #fb7042;
-}
-.logo .imagen{
+
+.header {
     width: 100%;
     height: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 225px;
+    background-color: #fb7042;
 }
-.menu {
-    width: 1515px;
+    .logo {
+        overflow: hidden;
+        width: 1515px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .img2{
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }
+.escritorio {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
     height: 30px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: hsla(351, 66%, 46%, 0.63);
 }
-.enlaces{
+    .enlaces{
     color: #740839;
     font-family: tw cen -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: bold;
-}
-.menu .enlaces a {
+    }
+.escritorio .enlaces a {
     width: 100px;
     height: 50;
-    margin: 6rem;
+    margin: 5rem;
     padding: 1rem;
 }
-a{
+    a{
     text-decoration: none;
     color: white;
-}
-h5 {
+    }
+    h5 {
     font-family: eras bold Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
-}
-p {
+    }
+    p {
     font-family: sans-serif;
     text-align: justify; 
     font-size: 1rem;
     padding: 3rem;
 
-}
+    }
 .uno {
-    width: 1515px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.uno .descripcion {
+    .descripcion {
     width: 50%;
     height: 100%;
-
 }
-.descripcion {
-    float: left;
-}
-.foto {
-    float: right;
-    padding: 3rem;
+    .foto {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .galeria {
-    width: 1520px;
-    height: 500px;
-    background-color: rgba(182, 179, 179, 0.705);
 }
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: eras bold Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        color: #740839;
+    }
+    .contenedor {
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+        .imagen {
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.75rem;
+            position: relative;
+            cursor: pointer;
+        }
+        .imagen ::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: hsla(15, 96%, 62%, 0.281);
+            opacity: 0;
+            transition: ease-in-out .25s;
+        }
+        .imagen :hover ::after{
+            opacity: .6;
+            }
+            
+            .img {            
+                height: 110%;
+            }
+        img {
+            height: 100%;
+            transition: ease-in-out .25s;
+        }
 .footer {
-    width: 1520px;
-    height: 50px;
+    width: 100%;
+    max-width: 110;
+    margin: auto;
+    text-align: center;
+    color: #740839;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 182, 193, 0.397);
+    height: auto;
 }
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, .85);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox #exit {
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        color: #ffffff;
+        font-size: 1.5rem;
+        opacity: .75;
+        cursor: pointer;
+        transition: ease-in-out .15s;
+    }
+    .lightbox #exit :hover {
+        opacity: 1;
+    }
