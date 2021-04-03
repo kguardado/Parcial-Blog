@@ -10,9 +10,9 @@
 </head>
 <body>
     <section class="header">
-        <div class="logo"><img class="img2" src="img/logo.png" alt="" nombre="cat"></div>
+        <img class="img2" src="img/logo.png" alt="" nombre="cat"></div>
     </section>
-    <section class="escritorio">
+    <nav class="escritorio">
         <div class="enlaces">
             <a href="Views/Historia.html" target="_blank" >Historia</a>
             <a href="Views/Programas.html" target="_blank" >Programas</a>
@@ -20,12 +20,24 @@
             <a href="Views/Foro.html" target="_blank">Foro</a>
             <a href="views/Adopta.html" target="_blank">Adopta</a>
         </div>
-    </section>
+    </nav>
+
+    <div class="degradado" id="degradado"></div>
+
+    <nav class="movil" id="movil">
+        <a href="Views/Historia.html" target="_blank" >Historia</a>
+        <a href="Views/Programas.html" target="_blank" >Programas</a>
+        <a href="Views/Contacto.html" target="_blank" >Contacto</a>
+        <a href="Views/Foro.html" target="_blank">Foro</a>
+        <a href="views/Adopta.html" target="_blank">Adopta</a>
+        <div class="Salir">Salir</div>
+        <div class="btnMenu" id="btnMenu"></div>
+    </nav>
     <div class="lightbox" id="lightbox">
         <span id="exit"><i class="fas fa-times"></i></span>
-        <div class="imagen">
+        <div class="image">
             <img id="imagenlightbox" src="img/siames.jpg" alt="">
-            <span id="nombre"></span>
+            <span id="nombre">Nombre: Felino 1</span>
         </div>
     </div> 
         <section class="galeria">
